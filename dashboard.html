@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AUA Internship Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<h1>AUA Internship Hub</h1>
+
+<button id="logoutBtn">Logout</button>
+
+</header>
+
+<div class="container">
+
+<!-- HOME -->
+
+<div class="card">
+
+<h2>🏠 Home</h2>
+
+<p>
+
+<b>AUA Internship Hub</b> is designed to provide course information, important dates and task management in one place.
+
+</p>
+
+<br>
+
+<p>
+
+</p>
+
+</div>
+
+<!-- COURSE -->
+
+<div class="card">
+
+<h2>📚 Course Information</h2>
+
+<div class="courseBox">
+
+
+<p>
+
+<b>Registration Fee</b>
+
+<br>
+
+600 Baht
+
+</p>
+
+<p>
+
+<b>Oxford Placement Test</b>
+
+<br>
+
+New students are required to take the Oxford Placement Test before enrolling.
+
+<br>
+
+(นักเรียนใหม่ทุกคนต้องสอบวัดระดับก่อนเริ่มเรียน)
+
+</p>
+
+</div>
+
+<br>
+
+<button class="course-btn"
+
+onclick="showCourse('efc')">
+
+📘 English for Communication
+
+</button>
+
+<button class="course-btn"
+
+onclick="showCourse('junior')">
+
+📗 Junior English for Communication
+
+</button>
+
+<button class="course-btn"
+
+onclick="showCourse('young')">
+
+📙 English for Young Learners
+
+</button>
+
+<button class="course-btn"
+
+onclick="showCourse('business')">
+
+💼 English for Business
+
+</button>
+
+<div id="courseDetail"
+
+class="course-detail">
+
+
+</div>
+
+</div>
+
+<!-- IMPORTANT DATE -->
+
+<div class="card">
+
+<h2>📅 Important Dates</h2>
+
+<div id="calendar"></div>
+
+</div>
+
+<!-- TASK -->
+
+<div class="card">
+
+<h2>✅ Task</h2>
+
+<input
+
+id="taskName"
+
+placeholder="Task Name">
+
+<input
+
+type="date"
+
+id="dueDate">
+
+<select id="taskStatus">
+
+<option>To Do</option>
+
+<option>In Progress</option>
+
+<option>Complete</option>
+
+</select>
+
+<button
+
+id="addTaskBtn">
+
+Add Task
+
+</button>
+
+<br><br>
+
+<div id="taskList">
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module"
+
+src="dashboard.js">
+
+</script>
+
+</body>
+
+</html>
